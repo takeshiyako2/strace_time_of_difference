@@ -6,7 +6,7 @@ Get strace time of difference from line to next N line
 
 ```
 # strace -ttT -s 1024 -p [PID] -o strace-dev.txt
-# ./strace_read_line.rb
+# ruby strace_read_line.rb
 
 12:29:20.265882 poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 1471228928) = 1 ([{fd=7, revents=POLLIN}]) <0.000009>
 12:29:20.266734 bind(7, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0 <0.000006>
